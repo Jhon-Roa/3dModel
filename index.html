@@ -75,7 +75,7 @@
             scene.add(directionalLight);
             
             // Renderizador
-            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
             renderer.setPixelRatio(window.devicePixelRatio);
             renderer.setSize(window.innerWidth, window.innerHeight);
             if (renderer.outputEncoding !== undefined) {
